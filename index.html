@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dibujando con canvas</title>
+</head>
+<body>
+    <h1>Dibujo en canvas</h1>
+    <label >
+        Cuantas lineas externas quieres
+        <input type="text" id="texto_lineas" />
+        <input type="button" value="A Darle!" id="botoncito" />
+    </label>
+    <p>
+        <label for="colorSupIz">Color superior izquierdo</label>
+        <input type="color" name="color" id="colorSupIz">
+        <label for="colorSupDer">Color superior derecho</label>
+        <input type="color" name="color" id="colorSupDer">
+        <label for="colorInfIz">Color inferior izquierdo</label>
+        <input type="color" name="color" id="colorInfIz">
+        <label for="colorInfDer">Color inferior derecho</label>
+        <input type="color" name="color" id="colorInfDer">
+    </p>
+    <label>
+        Cuantas lineas internas quieres
+        <input type="text" id="texto_lineasInt" />
+        <input type="button" value="A Darle!" id="botoncitoInt" />
+    </label>
+    <p>
+        <label for="colorSI">Color superior izquierdo</label>
+        <input type="color" name="color" id="colorSI">
+        <label for="colorSD">Color superior derecho</label>
+        <input type="color" name="color" id="colorSD">
+        <label for="colorII">Color inferior izquierdo</label>
+        <input type="color" name="color" id="colorII">
+        <label for="colorID">Color inferior derecho</label>
+        <input type="color" name="color" id="colorID">
+    </p>
+    <canvas width="500", height="500"id="dibujito"></canvas>
+    <p>Asi queda tu dibujo <input type="button" value="Limpiar" onclick="location.reload()"/></p>
+    <script src="./js/dibujo.js"></script>
+</body>
+</html>
